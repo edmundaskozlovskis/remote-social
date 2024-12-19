@@ -1,0 +1,73 @@
+:root {
+    --silver: #4d636f;
+    --dark-silver: #3a4b53;
+    --white: #ffffff;
+    --green: #4CAF50;
+}
+* {
+    box-sizing: border-box;
+}
+html {
+    font-family: "Open Sans", serif;
+}
+body {
+    margin: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    color: var(--white);
+    background-color: var(--silver);
+    align-items: center;
+}
+header nav a, header button {
+    color: var(--white);
+    display: inline-block;
+    padding: 12px 24px;
+}
+header nav a:first-child {
+    background-color: var(--dark-silver);
+    text-decoration: none;
+}
+header nav a:first-child i {
+    margin-right: 12px;
+}
+header nav button {
+    border: none;
+    background: none;
+}
+header nav button span {
+    background-color: var(--green);
+    padding: 2px 8px;
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+}
+header nav i {
+    font-size: 18px;
+}
+header .log-in img {
+    border-radius: 50%;
+}
+.container {
+    max-width: 1380px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.container .col {
+    float: left;
+    padding: 10px;
+    width: 65%;
+}
+.container .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.container .row .col:first-child {
+    width: 20%;
+}
+.container .row .col:last-child {
+    width: 15%;
+}
+/* header nav a:first-child  */
