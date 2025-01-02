@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-box">
+            <nav>
+                <a href="#"><i class="fa fa-home w3-margin-right"></i> Logo</a>
+                <a href="#"><i class="fa fa-globe"></i></a>
+                <a href="#"><i class="fa fa-user"></i></a>
+                <a href="#"><i class="fa fa-envelope"></i></a>
+                <button>
+                    <i class="fa fa-bell"></i>
+                    <span>3</span>
+                </button>
+            </nav>
+        </div>
+        <div class="log-in">
+            <a href="#">
+                <img width="23" height="23" src="https://www.w3schools.com/w3images/avatar2.png" alt="Avatar image">
+            </a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="my-profile">
+                        <h4>My profile</h4>
+                        <div>
+                            <img width="106" height="106" src="https://www.w3schools.com/w3images/avatar3.png" alt="Profile image">
+                        </div>
+                        <hr>
+                        <p>
+                            <i class="fa fa-pencil"></i>
+                            Desiner, UI
+                        </p>
+                        <p>
+                            <i class="fa fa-home"></i>
+                            Alytus, LT
+                        </p>
+                        <p>
+                            <i class="fa fa-birthday-cake"></i>
+                            February 16, 83
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <div class="card accordion-block">
+                    <button class="accordion">
+                        <i class="fa fa-circle-o-notch"></i>
+                        My Groups
+                    </button>
+                    <div class="panel">
+                        <p>Some text...</p>
+                    </div>
+                    <button class="accordion">
+                        <i class="fa fa-calendar-check-o"></i>
+                        My Events
+                    </button>
+                    <div class="panel">
+                        <p>Some other text..</p>
+                    </div>
+                    <button class="accordion">
+                        <i class="fa fa-users"></i>
+                        My Photo
+                    </button>
+                    <div class="panel">
+                        <div>
+                            <img width="131" height="87" src="https://www.w3schools.com/w3images/lights.jpg" alt="Accordion first image">
+                            <img width="131" height="87" src="https://www.w3schools.com/w3images/nature.jpg" alt="Accordion second image">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="card interests">
+                    <p>Interests</p>
+                    <p>
+                        <span class="w3-theme-d4">W3Schools</span>
+                        <span class="w3-theme-d3">Labels</span>
+                        <span class="w3-theme-d5">News</span>
+                        <span class="w3-theme-d2">Games</span>
+                        <span class="w3-theme-d1">Friends</span>
+                        <span class="w3-theme">Games</span>
+                        <span class="w3-theme-l1">Friends</span>
+                        <span class="w3-theme-l2">Food</span>
+                        <span class="w3-theme-l3">Design</span>
+                        <span class="w3-theme-l4">Art</span>
+                        <span class="w3-theme-l5">Photos</span>
+                      </p>
+                </div>
+                <br>
+                <div class="alert-box">
+                    <span onclick="this.parentElement.style.display='none'">
+                        <i class="fa fa-remove"></i>
+                    </span>
+                    <p>
+                        <strong>Hey!</strong>
+                    </p>
+                    <p>People are looking at your profile. Find out who.</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card create-post">
+                    <h6>Social Media template by w3.css</h6>
+                    <p contenteditable="true">Status: Feeling Blue</p>
+                    <button>
+                        <i class="fa fa-pencil"></i>
+                        Post
+                    </button>
+                    <br>
+                </div>
+                <br>
+            </div>
+            <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias mollitia nulla laboriosam, quam harum nostrum libero atque fuga aperiam reiciendis repellendus, inventore qui nemo sequi beatae tenetur placeat soluta ad.</div>
+        </div>
+    </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+            panel.style.display = "none";
+            } else {
+            panel.style.display = "block";
+            }
+        });
+        }
+    </script>
+</body>
+</html>
