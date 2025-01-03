@@ -1,8 +1,10 @@
 :root {
     --silver: #4d636f;
+    --light-silver: #cccccc;
     --dark-silver: #3a4b53;
     --white: #ffffff;
     --green: #4CAF50;
+    --black: #000000;
 }
 * {
     box-sizing: border-box;
@@ -53,12 +55,12 @@ header .log-in img {
 .container {
     max-width: 1380px;
     padding: 0 10px;
-    margin: 0 auto;
+    margin: 36px auto;
 }
 .container .col {
     float: left;
     padding: 10px;
-    width: 58%;
+    width: 57%;
 }
 .container .row:after {
     content: "";
@@ -69,7 +71,7 @@ header .log-in img {
     width: 25%;
 }
 .container .row .col:last-child {
-    width: 17%;
+    width: 18%;
 }
 /* header nav a:first-child  */
 .card {
@@ -102,7 +104,7 @@ header .log-in img {
     padding: 0;
 }
 .accordion-block button {
-    color: #ffffff;
+    color: var(--white);
     background-color: #7d97a5;
     display: block;
     width: 100%;
@@ -141,7 +143,7 @@ header .log-in img {
     right: 0;
     top: 0;
     padding: 8px 16px;
-    background-color: #cccccc;
+    background-color: var(--light-silver);
     cursor: pointer;
 }
 .create-post h6 {
@@ -151,18 +153,129 @@ header .log-in img {
     margin: 10px 0;
 }
 .create-post p {
-    border: 1px solid #cccccc;
+    border: 1px solid var(--light-silver);
     padding: 8px 16px;
 }
-.create-post button {
-    color: #ffffff;
+.create-post button,
+.post-two-img-button-box button {
+    color: var(--white);
     background-color: #607d8b;
     padding: 8px 16px;
     cursor: pointer;
     border: none;
     margin-bottom: 16px;
 }
-.create-post button:hover {
-    color: #000000;
-    background-color: #cccccc;
+.create-post button:hover,
+.post-two-img-button-box button:hover {
+    color: var(--black);
+    background-color: var(--light-silver)
+}
+.post-two-img .post-two-img-header img {
+    border-radius: 50%;
+}
+.post-two-img .post-two-img-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 24px;
+}
+.post-two-img span {
+    position: absolute;
+    top: 24px;
+    right: 16px;
+}
+.post-two-img {
+    position: relative;
+}
+.post-two-img h4 {
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0;
+}
+.post-two-img-box {
+    display: flex;
+    justify-content: space-between;
+}
+.post-two-img-box img {
+    width: 49%;
+}
+.post-two-img-button-box {
+    margin: 16px 0 0;
+}
+.post-one-img-box img {
+    width: 100%;
+} 
+.upcoming-events {
+    text-align: center;
+}
+.upcoming-events button {
+    border: none;
+    padding: 8px 16px;
+    width: 100%;
+    font-size: 15px;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+.upcoming-events button:hover {
+    background-color: var(--light-silver);
+}
+.friend-request {
+    text-align: center;
+}
+.friend-request img {
+    display: block;
+    margin: 0 auto;
+}
+.fried-request-button-box {
+    margin: 16px 0;
+    display: flex;
+    opacity: 0.6;
+}
+.fried-request-button-box button {
+    border: none;
+    padding: 8px 16px;
+    width: 50%;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.fried-request-button-box button:first-child {
+    background-color: #4CAF50;
+}
+.fried-request-button-box button:last-child {
+    background-color: #f44336;
+}
+.fried-request-button-box button:hover {
+    background-color: var(--light-silver);
+}
+.ads {
+    text-align: center;
+}
+.ads p {
+    text-transform: uppercase;
+}
+.bug {
+    text-align: center;
+    padding: 36px 0;
+}
+.bug i {
+    font-size: 36px;
+}
+footer {
+    background-color: #435761;
+    padding: 16px;
+}
+footer h5 {
+    margin: 10px 0;
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 400;
+}
+.copyright {
+    background-color: #303e45;
+    color: var(--white);
+}
+.copyright p {
+    margin: 0;
+    padding: 16px;
 }
