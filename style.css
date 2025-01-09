@@ -22,6 +22,10 @@ header {
     background-color: var(--silver);
     align-items: center;
 }
+header .mobile-btn {
+    float: right;
+    display: none;
+}
 header nav a, header button {
     color: var(--white);
     display: inline-block;
@@ -46,11 +50,59 @@ header nav button span {
     top: 4px;
 }
 header nav i {
-    font-size: 18px;
+    font-size: 18px !important;
+}
+header nav a:hover, header nav button:hover {
+    background-color: var(--light-silver);
+    color: var(--black);
+    cursor: pointer;
+}
+header nav .dropdown-submenu-box {
+    display: inline-block;
+}
+header nav .dropdown-submenu-box:hover .drodown-submenu {
+    display: block;
+}
+header nav .drodown-submenu {
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+    display: none;
+}
+header nav .drodown-submenu a {
+    color: var(--black);
+    background-color: var(--white);
+    display: block;
+    text-decoration: none;
+}
+header nav .drodown-submenu a:hover {
+    background-color: var(--silver);
+    color: var(--white);
 }
 header .log-in img {
     border-radius: 50%;
     display: block;
+}
+header .log-in a {
+    padding: 12px 28px;
+    display: block;
+}
+header .log-in a:hover {
+    background-color: var(--light-silver);
+}
+#navDeom {
+    display: none;
+}
+#navDeom a {
+    display: block;
+    color: var(--white);
+    background-color: var(--silver);
+    padding: 12px 24px;
+    text-decoration: none;
+}
+#navDeom a:hover {
+    color: var(--black);
+    background-color: var(--light-silver);
 }
 .container {
     max-width: 1380px;
@@ -278,4 +330,31 @@ footer h5 {
 .copyright p {
     margin: 0;
     padding: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    header {
+        flex-direction: row-reverse;
+    }
+    header .mobile-btn {
+        display: block;
+        color: var(--white);
+        background-color: var(--silver);
+        font-size: 18px;
+        padding: 12px 24px;
+    }
+    header .log-in,
+    header .nav-box a,
+    header nav .dropdown-submenu-box {
+        display: none;
+    }
+    header .nav-box a:first-child {
+        display: block;
+    }
+   .container .col, 
+   .container .row .col:first-child, 
+   .container .row .col:last-child {
+    width: 100%;
+   }
 }

@@ -12,16 +12,26 @@
 </head>
 <body>
     <header>
+        <a class="mobile-btn" href="#" onclick="onclickLink()">
+            <i class="fa fa-bars"></i>
+        </a>
         <div class="nav-box">
             <nav>
                 <a href="#"><i class="fa fa-home w3-margin-right"></i> Logo</a>
                 <a href="#"><i class="fa fa-globe"></i></a>
                 <a href="#"><i class="fa fa-user"></i></a>
                 <a href="#"><i class="fa fa-envelope"></i></a>
-                <button>
-                    <i class="fa fa-bell"></i>
-                    <span>3</span>
-                </button>
+                <div class="dropdown-submenu-box">
+                    <button>
+                        <i class="fa fa-bell"></i>
+                        <span>3</span>
+                    </button>
+                    <div class="drodown-submenu">
+                        <a href="#">One new friend request</a>
+                        <a href="#">John Doe posted on your wall</a>
+                        <a href="#">Jane likes your post</a>
+                    </div>
+                </div>
             </nav>
         </div>
         <div class="log-in">
@@ -30,6 +40,11 @@
             </a>
         </div>
     </header>
+    <div id="navDeom">
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">My Profile</a>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col">
@@ -224,6 +239,10 @@
             panel.style.display = "block";
             }
         });
+        }
+
+        function onclickLink() {
+            document.getElementById('navDeom').style.display = 'block'
         }
     </script>
 </body>
